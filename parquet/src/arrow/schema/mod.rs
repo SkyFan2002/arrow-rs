@@ -39,7 +39,7 @@ use crate::errors::{ParquetError, Result};
 use crate::file::{metadata::KeyValue, properties::WriterProperties};
 use crate::schema::types::{ColumnDescriptor, SchemaDescriptor, Type};
 
-mod complex;
+experimental!(mod complex);
 mod primitive;
 
 use crate::arrow::ProjectionMask;
